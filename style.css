@@ -1646,10 +1646,10 @@ body.dark-theme .modal-content h2 {
 /* YouTube Button Container */
 .youtube-button {
     position: fixed;
-    left: 20px;
+    right: 20px;
     bottom: 20px;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(135deg, #FF0000, #CC0000);
     border-radius: 50%;
     display: flex;
@@ -1690,28 +1690,14 @@ body.dark-theme .modal-content h2 {
 }
 
 /* Hover Effect - Expand and Show Text */
-.youtube-button:hover {
-    width: 200px;
-    border-radius: 30px;
-    box-shadow: 0 12px 40px rgba(255, 0, 0, 0.6);
-    transform: translateY(-5px);
-    animation: none;
-}
 
-.youtube-button:hover .youtube-icon {
-    transform: scale(1.2) rotate(10deg);
-}
 
-.youtube-button:hover .youtube-text {
-    opacity: 1;
-    transform: translateX(0);
-}
+
+
+
 
 /* Active/Click Effect */
-.youtube-button:active {
-    transform: translateY(-2px) scale(0.95);
-    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
-}
+
 
 /* Pulse Animation */
 @keyframes youtube-pulse {
@@ -1742,10 +1728,7 @@ body.dark-theme .modal-content h2 {
     opacity: 0;
 }
 
-.youtube-button:hover::before {
-    opacity: 1;
-    left: 100%;
-}
+
 
 /* Responsive - Mobile */
 @media (max-width: 768px) {
@@ -1802,3 +1785,4 @@ body.dark-theme .youtube-button:hover {
     box-shadow: 0 12px 40px rgba(255, 0, 0, 0.7);
 
 }
+
